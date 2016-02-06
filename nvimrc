@@ -1,5 +1,5 @@
 filetype off                  " required
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'mileszs/ack.vim'                                                 
 Plug 'mattn/emmet-vim'                                                 
