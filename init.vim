@@ -1,1 +1,1 @@
-/Users/sammylin/.nvimrc
+nvimrc
