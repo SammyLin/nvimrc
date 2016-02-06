@@ -9,10 +9,12 @@ brew install neovim/neovim/neovim
 Clone nvimrc
 ```
 git clone git@github.com:SammyLin/nvimrc.git ~/.sammylin-nvimrc
-mkdir -p ~/.config ln -s ~/.sammylin-nvimrc ~/.config/nvim
+mkdir -p ~/.config
+ln -s ~/.sammylin-nvimrc ~/.config/nvim
 ```
 
-Enter vim 
+Enter nvim 
+
 ```
 :PlugInstall
-
+```
