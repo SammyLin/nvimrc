@@ -18,10 +18,14 @@ mkdir -p ~/.config
 ln -s ~/.sammylin-nvimrc ~/.config/nvim
 ```
 
-Enter nvim 
+Enter nvim Install Plugin
 
-```
+```vim
 :PlugInstall
+
+" and Install Golang dependency
+:GoInstallBinaries
+
 ```
 
 Install Ack
