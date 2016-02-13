@@ -19,6 +19,14 @@ set incsearch                         " incremental search
 syntax enable
 set t_Co=256
 let g:solarized_termcolors=256
+" Set Python
+let g:python_version = matchstr(system("python --version | cut -f2 -d' '"), '^[0-9]')
+if g:python_version =~ 3
+    let g:python2_host_prog = "/usr/local/bin/python2"
+else
+    let g:python3_host_prog = "/usr/local/bin/python3"
+endif
+
 try
   colorscheme hybrid 
 catch
@@ -61,3 +69,5 @@ if executable('ag')
   " Ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef

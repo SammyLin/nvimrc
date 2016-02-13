@@ -1,8 +1,13 @@
-
-
 To install neovim the latest release:
 
 ```
+
+brew install python
+pip install neovim --user
+
+brew install python3
+pip3 install neovim --user
+
 brew install neovim/neovim/neovim
 ```
 
@@ -17,4 +22,14 @@ Enter nvim
 
 ```
 :PlugInstall
+```
+
+Install Ack
+```
+brew install ack
+```
+
+Install python
+```
+brew install py
 ```

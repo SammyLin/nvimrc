@@ -6,7 +6,8 @@ Plug 'mattn/emmet-vim'
 Plug 'vim-scripts/matchit.zip'                                         
 Plug 'scrooloose/nerdtree'                                             
 Plug 'jistr/vim-nerdtree-tabs'                                         
-Plug 'bling/vim-airline'                                               
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'                                   
 Plug 'kien/ctrlp.vim'                                                  
 Plug 'vim-scripts/mru.vim'                                             
@@ -22,7 +23,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'michaeljsmith/vim-indent-object'                                 
 Plug 'plasticboy/vim-markdown'                                         
 Plug 'kana/vim-smartinput'                                             
-Plug 'garbas/vim-snipmate'                                             
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'                                              
 Plug 'majutsushi/tagbar'                                               
 Plug 'tpope/vim-endwise'                                               
@@ -38,32 +39,35 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'flazz/vim-colorschemes'                                          
 Plug 'romainl/Apprentice'
 Plug 'tmux-plugins/vim-tmux'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " Add plugins to &runtimepath
 call plug#end()
 
 try
-  source ~/.nvim/settings/Key_Mappings.vim
+  source ~/.config/nvim/settings/Key_Mappings.vim
 catch
 endtry
 
 try
-  source ~/.nvim/settings/Settings.vim
+  source ~/.config/nvim/settings/Settings.vim
 catch
 endtry
 
 try
-  source ~/.nvim/settings/ack.vim
+  source ~/.config/nvim/settings/ack.vim
 catch
 endtry
 
 try
-  source ~/.nvim/settings/airline.vim
+  source ~/.config/nvim/settings/airline.vim
 catch
 endtry
 
 try
-  source ~/.nvim/settings/plugins_config.vim
+  source ~/.config/nvim/settings/plugins_config.vim
 catch
 endtry
 

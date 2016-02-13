@@ -40,3 +40,15 @@ let g:ctrlp_custom_ignore = 'tmp\|^\.DS_Store\|^\.git'
 "" ZenCoding
 """"""""""""""""
 let g:user_zen_mode='a'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+" let g:ycm_key_list_select_completion = ['\<Leader><TAB>', '\<Down>']
+" let g:ycm_key_list_previous_completion = ['\<C-S-TAB>', '\<Up>']
+let g:SuperTabDefaultCompletionType = '\<C-Tab>'
+let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
