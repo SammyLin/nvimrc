@@ -28,7 +28,7 @@ else
 endif
 
 try
-  colorscheme hybrid 
+  colorscheme molokai
 catch
 endtry
 
@@ -70,4 +70,11 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+" autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+" we need to force this detection first
+autocmd BufNewFile,BufRead */\(cookbooks\|site-cookbooks\)/*/\(attributes\|definitions\|libraries\|providers\|recipes\|resources\)/*.rb set filetype=ruby.chef
+autocmd BufNewFile,BufRead */\(cookbooks\|site-cookbooks\)/*/templates/*/*.erb set filetype=eruby.chef
+autocmd BufNewFile,BufRead */\(cookbooks\|site-cookbooks\)/*/metadata.rb set filetype=ruby.chef
+autocmd BufNewFile,BufRead */chef-repo/environments/*.rb set filetype=ruby.chef
+autocmd BufNewFile,BufRead */chef-repo/roles/*.rb set filetype=ruby.chef
+
