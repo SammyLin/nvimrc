@@ -39,13 +39,11 @@ Install python
 brew install py
 ```
 
-## Plugin
-
-## Font
+## What fonts in my vim ?
 
 * [Source Code Pro Font](https://github.com/adobe/source-code-pro)
 
-Install Font
+Install Fonts include powerline
 
 ```sh
 git clone https://github.com/powerline/fonts.git
