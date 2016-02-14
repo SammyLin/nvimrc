@@ -26,6 +26,7 @@ Plug 'tpope/vim-endwise'
 Plug 'vadv/vim-chef'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Ntpeters/vim-better-whitespace'
 
 Plug 'flazz/vim-colorschemes'
 
