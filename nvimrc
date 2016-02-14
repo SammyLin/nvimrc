@@ -35,7 +35,8 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'                                                 
 Plug 'vim-ruby/vim-ruby'                                               
 Plug 'thoughtbot/vim-rspec'                                            
-                                                                       
+Plug 'tpope/vim-surround'                                                                       
+
 Plug 'flazz/vim-colorschemes'                                          
 Plug 'romainl/Apprentice'
 Plug 'tmux-plugins/vim-tmux'
