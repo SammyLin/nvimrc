@@ -45,3 +45,5 @@ nmap <F6> :TagbarToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 map <Leader>w :w<CR>
+" Toggle line numbers
+noremap <F3> :set invnumber<CR>
