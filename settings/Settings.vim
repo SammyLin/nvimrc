@@ -51,7 +51,7 @@ set mouse=a
 set number
 
 " use emacs-style tab completion when selecting files, etc
-set wildmode=longest,list
+set wildmode=list:longest,full
 
 " make tab completion for files/buffers act like bash
 set wildmenu
