@@ -39,13 +39,11 @@ Install python
 brew install py
 ```
 
-## Plugin 
-
-## Font
+## What fonts in my vim ?
 
 * [Source Code Pro Font](https://github.com/adobe/source-code-pro)
 
-Install Font
+Install Fonts include powerline
 
 ```sh
 git clone https://github.com/powerline/fonts.git
@@ -70,7 +68,7 @@ cd fonts
 * [mru.vim](https://github.com/vim-scripts/mru.vim): Plugin to manage Most Recently Used (MRU) files
 * [supertab](https://github.com/ervandew/supertab): Perform all your vim insert mode completions with Tab
 * [TComment](https://github.com/tomtom/tcomment_vim): 快速加上註解
-* [tlib_vim](https://github.com/tomtom/tlib_vim): Some utility functions for VIM 
+* [tlib_vim](https://github.com/tomtom/tlib_vim): Some utility functions for VIM
 * [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils): interpret a file by function and cache file automatically
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): a Git wrapper so awesome, it should be illegal
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter): A Vim plugin which shows a git diff in the gutter (sign column) - 可以馬上 git diff 的狀態
@@ -83,12 +81,13 @@ cd fonts
   * [參考教學](http://mednoter.com/UltiSnips.html)
 * [vim-snippets](https://github.com/honza/vim-snippets): vim-snipmate default snippets (Previsouly snipmate-snippets) - 程式模組庫
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by scope : 把程式碼按 method 或 class 整理成 list 顯示出來。
-* [vim-endwise](https://github.com/tpope/vim-endwise): endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script - 幫你在後面加 `end` 
+* [vim-endwise](https://github.com/tpope/vim-endwise): endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script - 幫你在後面加 `end`
 * [vim-chef](https://github.com/vadv/vim-chef): Vim plugins for chef
 * [surround](https://github.com/tpope/vim-surround): 處理程式語言常常用到成對的符號，如括號等。
   * [參考教學](http://zuyunfei.com/2013/04/17/killer-plugin-of-vim-surround/)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim - 自動補完工具
   * [參考教學](http://zuyunfei.com/2013/05/16/killer-plugin-of-vim-youcompleteme/)
+* [vim-better-whitespace](https://github.com/Ntpeters/vim-better-whitespace): Better whitespace highlighting for Vim - 存檔後自動移除多餘的空白鍵
 
 ### Golang Development
 
@@ -127,7 +126,7 @@ cd fonts
 
     map <Leader>f :MRU<CR>
 
-### Display CtrlPBuffer 
+### Display CtrlPBuffer
 
     map <Leader>b :CtrlPBuffer<CR>
 
@@ -138,7 +137,7 @@ cd fonts
 
     <space>n
 
-### Open CtrlP 
+### Open CtrlP
 
     Control + p
     or
@@ -159,8 +158,8 @@ cd fonts
 ### previous buffer
 
     Control + h
-    
-### next buffer 
+
+### next buffer
 
     Control + l
 
@@ -179,22 +178,22 @@ cd fonts
 ### Finding a word
 
     <!-- /<word> -->
-    
+
     or
-    
+
     ?<word>
 
-    # Pressing the n key, will allow you to go directly to the next occurrence of the word. 
+    # Pressing the n key, will allow you to go directly to the next occurrence of the word.
 
 
 ### Ag (Finding a word in directory)
-    
+
     FF
 
-### Rspec 
-    
+### Rspec
+
     # :call RunCurrentSpecFile
-    <space>t 
+    <space>t
 
     # :call RunNearestSpec
     <space>s
@@ -202,7 +201,7 @@ cd fonts
     # :call RunLastSpec
     <space>l
 
-    # :call RunAllSpecs 
+    # :call RunAllSpecs
     <space>a
 
 
