@@ -47,6 +47,9 @@ set laststatus=2
 " Enable mouse use in all modes
 set mouse=a
 
+" Support Mac OS
+set clipboard=unnamed
+
 " Show Line Numbers
 set number
 
