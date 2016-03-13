@@ -36,9 +36,11 @@ Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/sy
 
 " Ruby on Rails Development
 Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rake'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'thoughtbot/vim-rspec'
+Plug 'ecomba/vim-ruby-refactoring'
 
 " Syntax highlighting for VIM
 Plug 'tmux-plugins/vim-tmux'
