@@ -19,6 +19,7 @@ set incsearch                         " incremental search
 syntax enable
 set t_Co=256
 let g:solarized_termcolors=256
+
 " Set Python
 let g:python_version = matchstr(system("python --version | cut -f2 -d' '"), '^[0-9]')
 if g:python_version =~ 3
@@ -44,11 +45,34 @@ set autoindent
 " always show the status line
 set laststatus=2
 
+"" Buffer nav
+noremap <leader>z :bp<CR>
+noremap <leader>q :bp<CR>
+noremap <leader>x :bn<CR>
+noremap <leader>w :bn<CR>
+
+"" Close buffer
+noremap <leader>c :bd<CR>
+
 " Enable mouse use in all modes
 set mouse=a
 
-" Support Mac OS
-set clipboard=unnamed
+"" Copy/Paste/Cut
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
+
+noremap ,o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
+
+noremap YY "+y<CR>
+noremap <leader>p "+gP<CR>
+noremap XX "+x<CR>
+
+if has('macunix')
+  " pbcopy for OSX copy/paste
+  vmap <C-x> :!pbcopy<CR>
+  vmap <C-c> :w !pbcopy<CR><CR>
+endif
 
 " Show Line Numbers
 set number

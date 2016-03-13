@@ -205,6 +205,16 @@ cd fonts
     <space>a
 
 
+### Open Github
+
+vi ~/.gitconfig
+```
+[alias]
+    url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'
+```
+
+    ,o
+
 ## Reference document
 
 * [Rails.vim 高效使用指南](http://ruby-china.org/topics/4478)
