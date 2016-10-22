@@ -16,9 +16,23 @@ filetype plugin on                    " enable filetype-specific plugins
 syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
+
 syntax enable
-set t_Co=256
-let g:solarized_termcolors=256
+"
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" Or if you have Neovim >= 0.1.5
+if (has("termguicolors"))
+  set termguicolors
+endif
+set background=dark
+let g:airline_theme='oceanicnext'
+
+try
+  colorscheme OceanicNext
+catch
+endtry
 
 " Set Python
 let g:python_version = matchstr(system("python --version | cut -f2 -d' '"), '^[0-9]')
@@ -27,11 +41,6 @@ if g:python_version =~ 3
 else
     let g:python3_host_prog = "/usr/local/bin/python3"
 endif
-
-try
-  colorscheme molokai
-catch
-endtry
 
 " Tab change Space
 set tabstop=2

@@ -29,6 +29,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'Ntpeters/vim-better-whitespace'
 
 Plug 'flazz/vim-colorschemes'
+Plug 'mhartington/oceanic-next'
 
 " Golang  Development
 Plug 'fatih/vim-go'
