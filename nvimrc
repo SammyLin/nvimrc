@@ -44,6 +44,7 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'ecomba/vim-ruby-refactoring'
 
 " Syntax highlighting for VIM
+Plug 'othree/yajs.vim'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'slim-template/vim-slim'
 Plug 'ekalinin/Dockerfile.vim'

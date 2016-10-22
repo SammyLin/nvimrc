@@ -110,6 +110,7 @@ cd fonts
 * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script): CoffeeScript support for vim
 * [scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim): Vim syntax file for scss (Sassy CSS)
 * [vim-octopress](https://github.com/tangledhelix/vim-octopress): Octopress support for Vim
+* [yajs.vim](https://github.com/othree/yajs.vim): YAJS: Yet Another JavaScript Syntax
 
 
 ## Key Mapping
