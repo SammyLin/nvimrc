@@ -52,6 +52,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'kchmck/vim-coffee-script'
 Plug 'tangledhelix/vim-octopress'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'vim-scripts/groovy.vim'
 call plug#end()
 
 runtime settings/Key_Mappings.vim

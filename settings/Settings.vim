@@ -11,6 +11,8 @@ set wrap
 filetype on                           " enable filetype detection
 filetype indent on                    " enable filetype-specific indenting
 filetype plugin on                    " enable filetype-specific plugins
+au BufReadPost Jenkinsfile* set syntax=groovy
+au BufReadPost Jenkinsfile* set filetype=groovy
 
 " Color Setting
 syntax on                             " syntax highlight
