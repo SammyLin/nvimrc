@@ -1,1 +1,1 @@
-/Users/sammy/.config/nvim/plugged/gocode/nvim/autoload/gocomplete.vim
+/Users/sammylin/.config/nvim/plugged/gocode/nvim/autoload/gocomplete.vim
